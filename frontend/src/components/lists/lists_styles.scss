@@ -1,0 +1,36 @@
+.picture-list-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid lightgray;
+  .toggle-collapse-btn-wrapper {
+    align-self: flex-start;
+    .toggle-collapse-btn {
+      height: fit-content;
+      padding: 2px;
+      border: none;
+      img {
+      }
+    }
+  }
+  .pictures-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    // margin: 0 30px;
+    max-height: 90px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+    &.content_not_collapsed {
+      max-height: 100%;
+    }
+    &.content_collapsed {
+    }
+
+    .single-picture {
+      &:hover {
+        transform: scale(1.01);
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.home-container {
+  display: flex;
+  justify-content: center;
+
+  flex-direction: row;
+  gap: 20px;
+  padding-top: 140px;
+  .home-login-btn-wrapper,
+  .home-signup-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .home-signup-btn-wrapper {
+  }
+}
